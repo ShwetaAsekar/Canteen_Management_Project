@@ -1,0 +1,33 @@
+.my-5 {
+    margin-top: 1rem !important;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50px;
+    width: 50px;
+}
+
+a {
+    color: white;
+}
+
+.top-nav-register {
+    color: red;
+    /* border: 2px solid yellow; */
+    margin-right: 6%;
+}
+
+.top-nav-register a {
+    /* border: 3px solid black; */
+    margin: 10px;
+    background-image: linear-gradient(439deg, #3187f9, rgb(18 1 7));
+    color: white;
+    font-size: large;
+    border-radius: 10px;
+    font-weight: 500;
+    padding: 1px 13px;
+    text-decoration: none;
+}

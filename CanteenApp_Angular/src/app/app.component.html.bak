@@ -1,0 +1,10 @@
+<div class="wrapper">
+<app-menu></app-menu>
+<h1>
+	{{title}} is my website
+</h1>
+<div class="content">
+<router-outlet></router-outlet>
+<div>
+
+</div><!-- end of wrappr class-->

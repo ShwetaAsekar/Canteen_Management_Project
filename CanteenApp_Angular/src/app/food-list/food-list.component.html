@@ -1,0 +1,55 @@
+<!-- <nav class="navbar navbar-expand-sm bg-primary "> -->
+<nav style="background-color: #237d9e;" class="navbar navbar-expand-sm ">
+    <div class="container-fluid">
+        <ul class="navbar-nav">
+            <img src="/assets/Picture1.png" class="center-Image" alt="Logo">
+
+            <li class="nav-item" style="margin-left: 15px; font-weight: 600;">
+                <a routerLink="/food-list" routerLinkActive="active" class="nav-link">Food List</a>
+            </li>
+            <li class="nav-item" style="margin-left: 15px; font-weight: 600;">
+                <a routerLink="/add-food" routerLinkActive="active" class="nav-link">Add Food</a>
+            </li>
+            <li class="nav-item" style="margin-left: 15px; font-weight: 600;">
+                <a routerLink="/food-details/:id" routerLinkActive="active" class="nav-link">Food Details</a>
+            </li>
+
+        </ul>
+    </div>
+    <div class="top-nav-register" style="float: right;">
+
+        <a href="/home">Logout</a>
+
+    </div>
+</nav>
+<div style="border: 0.5px solid rgb(214,214,214);" class="card my-5">
+
+    <div class="card-body">
+        <h3>Food List</h3>
+        <table class="table table-bordered table-striped">
+            <thead class="thead-dark">
+                <tr class="table-success">
+                    <th>Food Name</th>
+                    <th>Food Type</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let food of foods">
+                    <!-- <td>{{ food.id }}</td> -->
+                    <td>{{ food.fname }}</td>
+                    <td>{{ food.ftype }}</td>
+                    <td>{{ food.price}}</td>
+                    <td>{{ food.quantity }}</td>
+                    <td>
+                        <button (click)="updateFood(food.id)" class="btn btn-info">Update</button>
+                        <button (click)="deleteFood(food.id)" class="btn btn-danger" style="margin-left: 10px ;">Delete</button>
+
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

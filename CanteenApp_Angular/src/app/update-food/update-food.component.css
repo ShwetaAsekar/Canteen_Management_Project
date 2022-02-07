@@ -1,0 +1,28 @@
+*
+/*  {
+    margin-left: 100px;
+    margin-right: 150px;
+}
+ */
+
+.update-food {
+    margin-top: 50px;
+    width: 1000px;
+    height: 50px;
+    background-color: aqua;
+}
+
+h3 {
+    text-align: center;
+    color: black;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+form {
+    border: 1.5px solid #777474;
+    border-radius: 20px;
+    width: 600px;
+    margin: auto;
+    padding: 15px;
+}

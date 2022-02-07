@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>Food-List Form</title>
+</head>
+<body>
+<div align="center">
+    <h2>Food List</h2>
+    <!-- <a href="/add">Add New Food-Item</a> -->
+    <br/><br/>
+    <table border="1" cellpadding="20" cellspacing="4">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Food Name</th>
+                <th>Food Type</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Actions</th>
+			</tr>
+        </thead>
+        <tbody>
+				
+            	<tr th:each="u : ${ls1}"> 
+            	<td th:text="${u.id}">ID</td>
+                <td th:text="${u.fname}">Food Name</td>
+                <td th:text="${u.ftype}">Food Type</td>
+                <td th:text="${u.price}">Price</td>
+                <td th:text="${u.quantity}">Quantity</td>
+                <td><a th:href="UpdateFood">Update</a></td>
+                    &nbsp;&nbsp;&nbsp;
+				<td>
+                <input name="id" type="hidden" value="id">    
+                 <input type="submit" value="Delete">  
+                </td>
+				<td><input type="button" value="Delete"</td>
+            </tr>
+        </tbody>
+    </table>
+</div>   
+</body>

@@ -1,0 +1,78 @@
+ form {
+     border: 1.5px solid #777474;
+     width: 600px;
+     margin: auto;
+ }
+ 
+ input[type=email],
+ input[type=password] {
+     width: 100%;
+     padding: 12px 20px;
+     margin: 8px 0;
+     display: inline-block;
+     border: 1px solid #ccc;
+     box-sizing: border-box;
+ }
+ 
+ button {
+     background-color: #04AA6D;
+     color: white;
+     padding: 5px 10px;
+     border-radius: 50px;
+     margin: 8px 0;
+     border: none;
+     cursor: pointer;
+     width: 65%;
+     font-size: 30px;
+     font-weight: 500;
+     margin-left: 95px;
+ }
+ 
+ button:hover {
+     opacity: 0.8;
+ }
+ /* .cancelbtn {
+     width: auto;
+     padding: 10px 18px;
+     background-color: #f44336;
+ } */
+ 
+ .imgcontainer {
+     text-align: center;
+     margin: 24px 0 12px 0;
+ }
+ 
+ .container {
+     padding: 16px;
+ }
+ 
+ span.psw {
+     float: right;
+     padding-bottom: 14px;
+ }
+ /* Change styles for span and cancel button on extra small screens */
+ 
+ @media screen and (max-width: 300px) {
+     span.psw {
+         display: block;
+         float: none;
+     }
+     .cancelbtn {
+         width: 100%;
+     }
+ }
+ 
+ #loginnav {
+     width: auto;
+     height: 90px;
+     /* background: linear-gradient(354deg, #ff2121, rgb(69, 62, 62)); */
+ }
+ 
+ #loginhead {
+     /* border: 3px solid white; */
+     font-size: 50px;
+     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     font-weight: 600;
+     color: black;
+     margin: auto;
+ }

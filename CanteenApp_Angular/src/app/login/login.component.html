@@ -1,0 +1,35 @@
+<div class="col-md-6 offset-md-3"></div>
+<br>
+<nav id="loginnav" class="navbar navbar-expand-lg ">
+
+    <h1 id="loginhead">Admin Login</h1>
+
+</nav>
+<form (ngSubmit)="OnSubmit()">
+
+    <!-- <div class="imgcontainer">
+        <img src="img_avatar2.png" alt="Avatar" class="avatar">
+        </div> -->
+
+
+
+    <div class="container">
+        <label for="emailid"><b>Email Id</b></label><br>
+        <input type="email" placeholder="Enter Email Id" class="container" id="fname" [(ngModel)]="login.emailid" name="emailid" required>
+        <br>
+
+
+        <label for="password"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" class="container" id="password" [(ngModel)]="login.password" name="password" required>
+        <br><br>
+        <button type="submit">Login</button> <br>
+        <br>
+        <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+        <span class="psw">Forgot <a href="#">password?</a></span>
+
+    </div>
+
+
+</form>

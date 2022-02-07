@@ -1,0 +1,27 @@
+<div class="col-md-6 offset-md-3"></div><br>
+<h3>Add Food</h3>
+<form style="border:1.5 solid red;" (ngSubmit)="onSubmit()">
+
+    <div class="form-group">
+        <label>Food Name</label>
+        <input type="text" class="form-control" id="fname" [(ngModel)]="food.fname" name="fname">
+    </div><br>
+    <div class="form-group">
+        <label for>Food Type</label>
+        <input type="text" class="form-control" id="ftype" [(ngModel)]="food.ftype" name="ftype">
+    </div><br>
+    <div class="form-group">
+        <label for>Price</label>
+        <input type="text" class="form-control" id="price" [(ngModel)]="food.price" name="price">
+    </div><br>
+    <div class="form-group">
+        <label>Quantity</label>
+        <input type="text" class="form-control" id="quantity" [(ngModel)]="food.quantity" name="quantity">
+    </div><br>
+
+    <button class="btn btn-info" type="submit" style="margin-left: 45%;
+    margin-right: 45%;">Save</button>
+    <br>
+
+</form>
+<br><br><br>

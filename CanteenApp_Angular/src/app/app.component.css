@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+}
+
+.footer {
+    /* position: absolute; */
+    background-color: #237d9e;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-weight: 500;
+    font-size: 17px;
+    padding: 10px 10px;
+    color: white;
+    text-align: center;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a:hover {
+    color: wheat;
+}
+
+.title {
+    color: #4089bc;
+    font-weight: 700;
+}
+
+img {
+    width: auto;
+    height: 50px;
+    margin-left: 13px;
+}
+
+nav ul li a button {
+    margin-inline-start: 400px;
+}
+
+
+/* .button1 {
+    margin-inline-start: 600px;
+} */

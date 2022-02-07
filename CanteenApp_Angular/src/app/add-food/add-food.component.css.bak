@@ -1,0 +1,13 @@
+.add-food{
+	margin-top:50px;
+	width:1000px;
+	height:50px;
+	background-color:aqua;
+	
+}
+
+.add-foodh2{
+	color:red;
+	text-decoration:none;
+	inline-height:100px;
+}	
